@@ -1,0 +1,15 @@
+[project]
+name = "whatsthisbox"
+version = "0.1.0"
+description = "A lightweight Python CLI tool for quickly viewing local IP addresses, and system resource usage."
+authors = [
+    { name="GreenTree00", email="noemail@email.com" }
+]
+dependencies = [
+    "psutil>=7"
+]
+readme = "README.md"
+requires-python = ">=3.7"
+
+[project.scripts]
+whatsthisbox = "whatsthisbox.main:main"
