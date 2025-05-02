@@ -1,9 +1,9 @@
 from argparse import ArgumentParser
-from system import System
-from network import Network
+from .my_system import System
+from .network import Network
 
 def main():
-    system = System()
+    my_system = System()
     network = Network()
 
     parser = ArgumentParser(description="Quickly view local IP and system resource usage")
@@ -15,4 +15,7 @@ def main():
         print(network.network())
 
     if args.sys:
-        print(system.system_resources())
+        print(my_system.system_resources())
+
+if __name__ == "__main__":
+    main()
